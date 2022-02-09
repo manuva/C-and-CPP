@@ -9,21 +9,21 @@ using namespace std;
 
 class CWeight
 {
-private:
-	int pounds, ounces;
-public:
-	CWeight(int lb = 0, int oz = 0);	//combined default and argument constructor
-	void setWt();		//prompt for and get input for pounds and ounces
-	void setWt(int lb, int oz);	//sets current object with parameter lb and oz
-	void showWt() const;	//display the current object's pounds and ounces
-	int getPounds();		//returns pounds
-	int getOunces();	//returns ounces
-	CWeight addWt (const CWeight& wt) const;
-	//add current object and parameter wt and return the total
-	//to add: add pounds to pounds and ounces to ounces without adjusting
-	CWeight subtractWt (const CWeight& wt) const;
-	//subtract parameter wt from current object and return the difference
-	//to subtract: subtract pounds from pounds and ounces from ounces without adjusting
+	private:
+		int pounds, ounces;
+	public:
+		CWeight(int lb = 0, int oz = 0);	//combined default and argument constructor
+		void setWt();		//prompt for and get input for pounds and ounces
+		void setWt(int lb, int oz);	//sets current object with parameter lb and oz
+		void showWt() const;	//display the current object's pounds and ounces
+		int getPounds();		//returns pounds
+		int getOunces();	//returns ounces
+		CWeight addWt (const CWeight& wt) const;
+		//add current object and parameter wt and return the total
+		//to add: add pounds to pounds and ounces to ounces without adjusting
+		CWeight subtractWt (const CWeight& wt) const;
+		//subtract parameter wt from current object and return the difference
+		//to subtract: subtract pounds from pounds and ounces from ounces without adjusting
 };
 
 CWeight CWeight::addWt(const CWeight& wt) const
